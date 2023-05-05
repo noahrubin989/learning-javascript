@@ -81,16 +81,12 @@ function soft_shrinkage(x, lamb) {
 function elu(x, alpha=1) {
     if (x > 0) {
         return x
-    }
-    else {
+    } else {
         let e = Math.E
         let z = Math.pow(e, x) - 1
         return alpha * z
     }
 }
-
-
-
 
 
 
