@@ -34,7 +34,7 @@ const linearFunc = (b0, b1, x) => {
     return b0 + b1*x;
 }
 
-function gradientDescent(xArray, yArray, alpha, nIter=1000) {
+function gradientDescent(xArray, yArray, alpha=0.001, nIter=100000) {
     let b0 = 0;
     let b1 = 0;
 
@@ -58,6 +58,6 @@ function gradientDescent(xArray, yArray, alpha, nIter=1000) {
 let x = [1.21, 3, 5.16, 8.31, 10.21]
 let y = [1.69, 5.89, 4.11, 5.49, 8.65]
 
-let [b0, b1] = gradientDescent(x, y, alpha=0.001, nIter=100000)
+let [b0, b1] = gradientDescent(x, y)
 console.log(`b0 = ${b0}`);
 console.log(`b1 = ${b1}`);
