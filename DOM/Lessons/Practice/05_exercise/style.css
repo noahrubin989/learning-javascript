@@ -1,0 +1,26 @@
+label, input {
+    display: block;
+} 
+
+label, input[type=button] {
+    margin-top: 10px;
+}
+
+/* Another way of getting submit button */
+#submit {
+    border: 1px black solid;
+    border-radius: 2px;
+    padding: 8px 12px;
+    background-color: limegreen;
+    transition: 0.25s;
+}
+
+#submit:hover {
+    color: limegreen;
+    background-color: black;
+}
+
+#submit:active {
+    opacity: 0.75;
+}
+
