@@ -1,0 +1,41 @@
+body {
+    font-family: Arial;
+}
+
+.container {
+    border: 1px black solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.my-button {
+    border: 1px black solid;
+    border-radius: 3px;
+    padding: 10px 12px;
+    background-color: greenyellow;
+    color: black;
+    transition: 0.2s;
+}
+
+.my-button:hover {
+    color: greenyellow;
+    background-color: black;
+}
+
+.my-button.booked {
+    /* Can now do this because of `classList.add` */
+    background-color: gray;
+    color: black;
+}
+
+.my-button:active {
+    opacity: 0.75;
+}
+
+.my-button.booked:active {
+    /* Can now do this because of `classList.add` */
+    opacity: 1;
+}
