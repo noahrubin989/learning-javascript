@@ -17,6 +17,11 @@ myul.addEventListener('click', function (e) {
     if (target.matches('li')) {
         target.style.color='#50C878';
     }
+
+    // Reset the text color after 1 second
+    setTimeout(function () {
+      target.style.color = ''; // Reset to the original text color
+    }, 1000);
 })
 
 function addSports(arr, parentElem) {
