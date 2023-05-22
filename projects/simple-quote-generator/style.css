@@ -1,0 +1,63 @@
+body {
+    font-family: 'Roboto', sans-serif; 
+    display: flex;
+    justify-content: center; /* Center the quote box horizontally */
+    align-items: center; /* Center the quote box vertically */
+    height: 100vh;
+    background: rgb(0, 135, 198);
+    background: linear-gradient(180deg, rgba(0, 135, 198, 1) 0%, rgba(0, 212, 255, 1) 100%);
+}
+  
+.quote-container {
+    background-color: white;
+    border: 1px black solid;
+    border-radius: 10px;
+    width: 50%; /* Set the width of the quote box to 50% of the page */
+    padding: 20px; /* Add some padding to the quote box */
+    text-align: center;
+}
+  
+
+.quote-container, .quote-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the contents horizontally */
+    justify-content: center; /* Center the contents vertically */
+}
+
+.quote-header {
+    text-decoration-line: underline;
+}
+
+.quote-text, .quote-author { 
+    margin-top: 4px;
+}
+
+.quote-author {
+    color: blue;
+    font-weight: bold;
+}
+
+.quote-text {
+    margin-bottom: 0; 
+}
+
+.new-quote-button {
+    padding: 10px 12px;
+    font-family: 'Roboto', sans-serif; 
+    border: 1px black solid;
+    border-radius: 5%;
+    background-color: rgba(0, 212, 255, 1);
+    transition: 0.2s;
+}
+
+.new-quote-button:hover {
+    background-color: black;
+    color: rgba(0, 212, 255, 1);
+}
+
+.new-quote-button:active {
+    opacity: 0.75;
+}
+
+  
