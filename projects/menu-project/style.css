@@ -1,0 +1,31 @@
+body {
+    font-family: 'Roboto', sans-serif; 
+}
+
+img {
+    width: 400px;
+}
+
+.section-center {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+    justify-items: center;
+    align-items: start;                                                                                                                                  
+  }
+  
+  .item-info {
+    text-align: center;
+  }
+  
+  .item-info header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .item-info h4 {
+    margin: 0 5px;
+  }
+  
