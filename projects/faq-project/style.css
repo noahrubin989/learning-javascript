@@ -1,0 +1,93 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(229, 229, 229);
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white; /* Set the background color of the navigation bar */
+    z-index: 100; /* Set a higher z-index value to ensure it sits above the body */
+}
+
+
+.nav-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 2%;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+.app-name {
+    color: #009B77;
+    font-weight: bold;
+}
+
+.author a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
+.author a:visited {
+    text-decoration: none; /* Remove underline for visited links */
+    color: black; /* Set desired color for visited links */
+}
+
+.question {
+    display: flex;
+    flex-direction: column;
+    background-color:white;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+
+    /* place below navbar */
+    position: relative;
+    top: 60px; /* Adjust this value based on the height of your navigation bar */
+    
+}
+
+.question-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.question-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.question-buttons button {
+    background-color: transparent;
+    border: none;
+}
+
+.question-buttons button i {
+    font-size: 24px; /* Increase the font size to make the icons larger */
+}
+
+.question-underline {
+    height: 2px;
+    width: 100%;
+    background-color: #000;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    display: none; /* Hide by default */
+}
+
+.question-answer {
+    display: none; /* Hide by default */
+    color:rgb(78, 78, 78);
+}
