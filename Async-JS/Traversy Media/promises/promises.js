@@ -61,13 +61,12 @@ init(newestPost);
 
 // Both approaches are valid and widely used. The choice between them depends on your personal preference and the specific requirements of your project. Here are a few considerations:
 
-// Promises with .then() and .catch():
-
+// === Promises with .then() and .catch(): ===
 // Suitable for handling promises in a more explicit and chainable manner.
 // Useful when you have multiple asynchronous operations that need to be executed in a specific sequence.
 // Allows more fine-grained error handling with .catch().
-// Async/await:
 
+// === Async/await: ===
 // Provides a more synchronous and straightforward way to write asynchronous code.
 // Easier to read and understand, especially for developers who are more familiar with synchronous programming.
 // Can simplify code structure and avoid excessive chaining of .then().
