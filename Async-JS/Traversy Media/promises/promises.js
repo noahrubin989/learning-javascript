@@ -29,6 +29,7 @@ function createPostImproved(p) {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             posts.push(p);
+            // Set to the boolean of true and observe what happens in the console
             const error = false;  // in practice you'd run some error checking
             if (!error) {
                 resolve();
@@ -41,4 +42,4 @@ function createPostImproved(p) {
 
 // Can use `then` method
 let newpost = {title: 'Post Three', body: 'This is post three'};
-createPostImproved(newpost).then(getPosts);
+createPostImproved(newpost).then(getPosts).catch(err => console.log(err));
