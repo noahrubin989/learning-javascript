@@ -43,3 +43,7 @@ function createPostImproved(p) {
 // Can use `then` method
 let newpost = {title: 'Post Three', body: 'This is post three'};
 createPostImproved(newpost).then(getPosts).catch(err => console.log(err));
+
+
+// To still learn:
+// * Promise.all()
