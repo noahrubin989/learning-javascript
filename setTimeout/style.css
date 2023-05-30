@@ -1,0 +1,22 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#header {
+    color: rgb(82, 181, 82);
+    text-align: center;
+    text-decoration: underline;
+}
+
+.message-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.cancel-button {
+    visibility: hidden;
+}
+
