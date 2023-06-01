@@ -1,0 +1,5 @@
+Status Codes
+- The result code 200 means that the page the client wanted is available and shown in the content. 
+- The result code 404 means that the page the client wanted is not available, but it can also return content (eg. a page saying "sorry, couldn't find your page")
+- Usually a normal web page returns 200, saying all is ok.
+- All numbers and their meaning can be found here: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
