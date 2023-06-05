@@ -27,6 +27,7 @@ body {
     padding: 0 0.62em;
     border: none; 
     border-bottom: 2px solid blue;  /* neat! */
+    outline: none;  /* no border once we click on the input */
 }
 
 .search-wrapper button {
@@ -36,5 +37,11 @@ body {
     padding: 0.8em 0;
     border: none;
     border-radius: 1.5em;
+    transition: 0.25s;
+}
+
+.search-wrapper button:hover {
+    
+    background-color: rgb(100, 100, 100);
 }
 
