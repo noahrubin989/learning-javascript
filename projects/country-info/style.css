@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;  /* changed from content-box */
+}
+
+body {
+    background-color: rgb(254, 254, 19);  /* have this smoothly change every 30s */
+}
+
+.container {
+    background-color:white;
+    margin: 25%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-wrapper {
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 1.25em;
+}
+
+.search-wrapper input {
+    font-size: 1em;
+    padding: 0 0.62em;
+    border: none; 
+    border-bottom: 2px solid blue;  /* neat! */
+}
+
+.search-wrapper button {
+    font-size: 1em;
+    background-color: blue;
+    color: white;
+    padding: 0.8em 0;
+    border: none;
+    border-radius: 1.5em;
+}
+
