@@ -22,7 +22,7 @@ myPromise.then(
         return responseObject.json();
     }
 ).then(
-    // Promise resolved, hence the `data` that we are referring to here is the json data from a few lines up
+    // Promise resolved, hence the `data` that we are referring to here is the returned json data from a few lines up (where we used the .json method)
     (data) => {
         // console.log(data);
         let capital = data[0].capital[0];  // ['Berlin'] -> 'Berlin'
