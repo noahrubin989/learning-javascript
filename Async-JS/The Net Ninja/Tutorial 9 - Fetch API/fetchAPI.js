@@ -1,11 +1,17 @@
 // npm install node-fetch
 import fetch from "node-fetch";
 
-let countryName = 'new zealand'
+let countryName = 'south africa'
 let URL = `https://restcountries.com/v3.1/name/${countryName}`;
 
-// Convert to title case for display purposes
-countryName = countryName.charAt(0).toUpperCase() + countryName.slice(1);
+
+String.prototype.toProperCase = function () {
+    // `this` is the string to be transformed
+    return this.replace(/\w\S*/g, (txt) => txt.charAt(0).toUpperCase() + txt.slice(1).toLowerCase());
+};
+
+// Convert to title case for display purposes (suitable for one word country names only)
+countryName = countryName.toProperCase();
 
 // fetch() sends a HTTP get request to the URL above and returns a promise that represents the asynchronous operation of fetching the data from the API.
 let myPromise = fetch(URL);
