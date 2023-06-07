@@ -10,7 +10,7 @@ String.prototype.toProperCase = function () {
     return this.replace(/\w\S*/g, (txt) => txt.charAt(0).toUpperCase() + txt.slice(1).toLowerCase());
 };
 
-// Convert to title case for display purposes (suitable for one word country names only)
+// Convert to title case for display purposes
 countryName = countryName.toProperCase();
 
 // fetch() sends a HTTP get request to the URL above and returns a promise that represents the asynchronous operation of fetching the data from the API.
