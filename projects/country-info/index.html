@@ -13,10 +13,20 @@
             <input type="text" id="country-input" placeholder="Enter a country name here...">
             <button id="search-btn">Search</button>
         </div>
-        <div id="result">
-
+        <h3 class="error-message hidden"></h3>
+        <div class="result hidden">
+            <div class="image-container">
+                <img alt="flag" src="" class="country-image">
+                <p class="country-name"></p>
+            </div>
+            <div class="facts-container">
+                <p></p>
+                <p></p>
+                <p></p>
+            </div>
         </div>
     </div>
     <script src="app.js"></script>
+    <script src="/background/background-changes.js"></script>
 </body>
 </html>
