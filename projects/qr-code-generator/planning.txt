@@ -1,0 +1,17 @@
+Noah Rubin: June 10, 2023
+
+Brainstorm of useful Bootstrap implementation ideas for QR code generator:
+
+Card
+- Use a Bootstrap card component to provide a container for the QR code generator. 
+- The card can hold the necessary input fields and button to "Generate Code"
+
+Collapse
+- Maybe use this for displaying the generated QR code
+
+Form controls
+- Bootstrap offers a wide range of form control styles that you can use for input fields, such as text inputs for entering data that will be encoded into the QR code.
+
+Alerts
+- Display success or error messages when generating or interacting with the QR code generator.
+- Unable to generate code, etc.
