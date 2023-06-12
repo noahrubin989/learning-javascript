@@ -11,30 +11,43 @@ const getValue = (userInput) => {
     return userInput.value;
 }
 
+const removeExistingAlert = () => {
+    const existingAlert = document.querySelector('.alert');
+    if (existingAlert) {
+        existingAlert.remove();
+    }
+}
+
 
 const urlInput = document.querySelector('#urlInput');
 const btnContainer = document.querySelector('#buttonContainer');
 const qrContainer = document.querySelector('#qrCodeContainer');
-const qrImage = document.querySelector('#qrImage')
+const qrImage = document.querySelector('#qrImage');
+
+const alertElement = document.createElement('div');
+alertElement.classList.add('alert', 'alert-danger', 'mt-3', 'text-center');
+alertElement.textContent = 'Please enter a URL';
 
 urlInput.addEventListener('input', () => {
-    let enteredURL = getValue(urlInput);
-    if (isValidUrl(enteredURL)) {
+    if (isValidUrl(getValue(urlInput))) {
         btnContainer.classList.remove('d-none');
     }
 });
 
-// Can't seem to get QR code image src
-
 btnContainer.addEventListener('click', () => {
-    // Make API call
     let enteredURL = getValue(urlInput);
-    console.log(qrImage.src);
-    let qrCodeImageUrl = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${enteredURL}`;
-    qrImage.src = qrCodeImageUrl;
-    console.log(qrImage.src);
-    qrContainer.classList.remove('d-none');
+    if (isValidUrl(enteredURL)) {
+        removeExistingAlert();
+        qrImage.src = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${enteredURL}`;
+        qrContainer.classList.remove('d-none');
+    } else {
+        // Remove a QR code if there was one
+        qrContainer.classList.add('d-none');
+
+        // Remove any existing alert
+        removeExistingAlert();
+
+        // Insert the alert after the urlInput element
+        urlInput.insertAdjacentElement('afterend', alertElement);
+    }
 });
-
-
-
