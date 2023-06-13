@@ -4,7 +4,7 @@ ReactDOM.render(
 )
 
 // Exercise: 
-// Render a ul with two li's inside
+// Render a ul with three li's inside
 ReactDOM.render(
     <ul>
         <li>Sydney</li>
