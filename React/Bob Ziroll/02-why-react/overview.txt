@@ -1,0 +1,3 @@
+Several React components can be combined to produce another React component. This is one of the best features of React. It’s a simple concept with great advantages.
+
+See here for a full explanation on composability
