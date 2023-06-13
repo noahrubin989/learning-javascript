@@ -1,3 +1,15 @@
-Several React components can be combined to produce another React component. This is one of the best features of React. It’s a simple concept with great advantages.
+==================== Composable ====================
 
-See here for a full explanation on composability
+* Several React components can be combined to produce another React component. 
+* This is one of the best features of React. It’s a simple concept with great advantages.
+
+See here for a full explanation on composability:
+* https://www.syncfusion.com/succinctly-free-ebooks/reactjs-succinctly/composability
+
+==================== Declaritive ====================
+* As well as being composable it is also declaritive
+* We are able to design simple views for each state in our application, and React will efficiently update and render just the right components when your data changes
+* Declaritive views make your code more predictable and easier to debug
+
+See more here:
+* https://medium.com/trabe/why-is-react-declarative-a-story-about-function-components-aaae83198f79
