@@ -1,0 +1,10 @@
+body {
+    background: linear-gradient(to bottom, #dcf1ff, #a3e7ff);
+    min-height: 100vh;
+}
+
+.custom-image {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
