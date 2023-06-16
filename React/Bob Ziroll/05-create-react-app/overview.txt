@@ -1,2 +1,5 @@
 Here is how we can create a React app easily:
 https://youtu.be/bMknfKXIFA8?t=5848
+
+Pay close attention to this part:
+https://youtu.be/bMknfKXIFA8?t=5943
