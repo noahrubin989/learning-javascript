@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solutions Simplified - Travel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ========== Contains our main navigation menu and logo etc. ========== -->
+    <header> 
+        <div class="container-fluid bg-dark">
+            <nav class="navbar d-flex flex-row align-items-center justify-content-space-between">
+                <div class="navbar--icon-container d-flex align-items-center justify-content-center ">
+                    <div class="navbar--brand-name"><h1>Solutions Simplified</h1></div>
+                </div>
+                <div class="navbar--portfolio-links d-flex flex-row align-items-center justify-content-center" id="mynav">
+                    <a class="link-light text-decoration-none" href="https://www.linkedin.com/in/noah-rubin1/" target="_blank">LinkedIn</a>
+                    <a class="link-light text-decoration-none" href="https://github.com/noahrubin989" target="_blank">GitHub</a>
+                    <a class="link-light text-decoration-none" href="https://www.youtube.com/channel/UCB_bKf_dqJEUf2_sZC_RGpQ" target="_blank">YouTube</a>
+                </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ========== Main Content ========== -->
+    <main>
+        <section class="album d-flex align-items-center flex-column py-5 row-gap-2">
+            <h1>Plan your next trip with ease</h1>
+            <h5>Grow. Explore. Inspire.</h5>
+            <!-- pay close attention to data bootstrap toggle and data bootstrap target  -->
+            <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#join-now-modal">Join Now</button>
+        </section>
+        <!-- modal itself: https://www.youtube.com/watch?v=tt5uUMQgzl0 -->
+        <div class="modal fade" id="join-now-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+            <div class="modal-dialog">  <!--The white bubble that pops up on the screen -->
+                <div class="modal-content"> <!--The content inside the bubble -->
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal-title">Get the latest updates</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Are you ready to plan the trip of a lifetime? Sign up now for further updates!</p>
+                        <label for="my-modal-email" class="form-label">Your email:</label>
+                        <input type="email" class="form-control" id="my-modal-email" placeholder="Enter email...">
+                    </div>
+                    <div class="modal-footer justify-content-center">
+                        <button class="btn btn-dark">Submit</button>
+                    </div>
+                </div>  
+            </div>
+        </div>
+
+        <section class="album bg-light px-5 py-5">
+            <div id="card-container" class="row row-gap-5">
+                
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== Footer Content ========== -->
+    <footer>
+        <div class="container">
+            <div class="d-flex flex-column align-items-center pb-3 border-top row-gap-1">
+                <a href="/" class="link-body-emphasis text-decoration-none mt-2">
+                    <span class="fs-4"><i class="fa-sharp fa-solid fa-plane-departure" style="color: rgb(0, 0, 0);"></i> 2023</span>
+                </a>
+                <ul>
+                    <a class="me-3 py-2 link-dark text-decoration-none" href="https://www.linkedin.com/in/noah-rubin1/" target="_blank"><span class="fs-4"><i class="fa-brands fa-linkedin"></i></span></a>
+                    <a class="me-3 py-2 link-dark text-decoration-none" href="https://github.com/noahrubin989" target="_blank"><span class="fs-4"><i class="fa-brands fa-github"></i></span></a>
+                    <a class="me-3 py-2 link-dark text-decoration-none" href="https://www.youtube.com/channel/UCB_bKf_dqJEUf2_sZC_RGpQ" target="_blank"><span class="fs-4"><i class="fa-brands fa-youtube"></i></span></a>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
