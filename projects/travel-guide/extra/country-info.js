@@ -27,11 +27,12 @@ export const generateSnapshots = (countries) => {
         cardText.textContent = country.description;
 
         const link = document.createElement("a");
-        [link.href, link.className, link.textContent, link.href] = [
+        [link.href, link.className, link.textContent, link.href, link.target] = [
             country.buttonLink, 
             "btn btn-dark", 
             `Explore ${country.name}`, 
-            `https://www.lonelyplanet.com/${country.name.toLowerCase()}`
+            `https://www.lonelyplanet.com/${country.name.toLowerCase()}`,
+            "_blank"
         ];
 
         cardBody.appendChild(cardTitle);

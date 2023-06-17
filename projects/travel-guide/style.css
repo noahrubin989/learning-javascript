@@ -16,3 +16,8 @@
     border: 0.2px black solid;
     height: 225px;
 }
+
+.card-text {
+    height: 250px;
+}
+
