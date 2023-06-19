@@ -1,0 +1,73 @@
+/* June 2023 */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --lt-gray: rgb(194, 194, 194);
+}
+
+body {
+    background-color: #00263e;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.card {
+    background-color: #001e33;
+    max-width: 500px; /* Adjust the value as needed */
+    margin: 0 auto; /* Center the card horizontally */
+}
+
+.card-body {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.card--intro-info {
+    row-gap: 10px;
+}
+
+.person-name {
+    margin-bottom: 0px;
+}
+
+.person-title {
+    color: rgb(199, 143, 0);
+    margin-bottom: 0px;
+}
+
+.person-link {
+    color: var(--lt-gray);
+    margin-bottom: 10px;
+}
+
+.card--contact-info {
+    column-gap: 10px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    column-gap: 6px;
+}
+
+.descriptive-text {
+    color: var(--lt-gray);
+}
+
+.card-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 24px;
+    background-color: #001a2d;
+}
+
+.card-footer > a > img {
+    width: 35px;
+    border-radius: 5px;
+}
+
