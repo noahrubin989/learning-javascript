@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+nav {
+    height: 70px;
+}
+
+section {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Hero section will be a flexbox */
+.hero {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav--logo {
+    margin-left: 30px;
+    max-width: 100px;
+}
+
+
+.images-container {  
+    display: grid;
+    grid-template-columns: repeat(5, 6fr);
+    grid-template-rows: repeat(4, 6fr);
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "host--image-fourth host--image-fourth host--image-fourth host--image-two host--image-two"
+      "host--image-fourth host--image-fourth host--image-fourth host--image-two host--image-two"
+      "host--image-one host--image-one host--image-third host--image-third host--image-third"
+      "host--image-one host--image-one host--image-third host--image-third host--image-third";
+}
+
+.images-container > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  
+  
+.host--image-one { grid-area: host--image-one; }
+
+.host--image-two { grid-area: host--image-two; }
+
+.host--image-third { grid-area: host--image-third; }
+
+.host--image-fourth { grid-area: host--image-fourth; }
+
+.hero--header {
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+.hero--text {
+    margin-top: 0;
+}
+
+/* Card */
+/* .experience--instance {
+
+} */
+
+.experience--image-container > img {
+    border-radius: 10px;
+}
+
+.experience--reviews-container {
+    column-gap: 5px;
+}
