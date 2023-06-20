@@ -7,9 +7,14 @@ import React from "react";
 export default function App() {
     return (
         <div>
-            <Navbar></Navbar>
-            <Hero></Hero>
-            <Card></Card>
+            <Navbar />
+            <Hero />
+            <Card 
+                stars={5} 
+                country={"USA"} 
+                experience={"Learn wedding photography"}
+                price={125}
+            />
         </div>
     )
 }
