@@ -6,14 +6,14 @@ import { faStar } from '@fortawesome/free-solid-svg-icons'
 library.add(faStar)
 
 
-export default function Card({stars, country, experience, price}) {
+export default function Card({image, stars, reviewCount, country, experience, price}) {
     return (
         <div className="card border-0">
-            <img className="card--image" src={require("../images/wedding.jpg")} alt="wedding"/>
+            <img className="card--image" src={require(`../images/${image}`)} alt="wedding"/>
             <div className="card--stats">
                 <FontAwesomeIcon className="card--star" icon="fa-solid fa-star" style={{color: "#ff0000",}} />
                 <span>{stars}</span>
-                <span className="gray">(6) • </span>
+                <span className="gray">({reviewCount}) • </span>
                 <span className="gray">{country}</span>
             </div>
             <p className="mb-1 mt-1">{experience}</p>
