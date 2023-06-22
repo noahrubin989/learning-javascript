@@ -73,8 +73,11 @@ section {
 }
 
 .card--image {
-    width: 100%;
+    /* Don't hard code 175 here! */
+    width: 175px;
+    height: 175px;
     border-radius: 6px;
+    object-fit: cover;
 }
 
 .card--stats {
@@ -90,47 +93,3 @@ section {
     color: rgb(140, 140, 140);
 }
 
-
-
-/* .experience--instance {
-
-} */
-/* 
-.experience--instance {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: max-content;
-}
-
-.experience--image-container {
-    position: relative;
-}
-  
-.experience--image-container span {
-    position: absolute;
-    top: 10px;
-    left: 5px;
-    background-color: rgb(221, 221, 221);
-    border-radius: 2px;
-    padding: 4px;
-}
-
-.experience--image-container img {
-    border-radius: 10px;
-    width: 200px;
-}
-
-.experience--reviews-container {
-    display: flex;
-    align-items: center;
-    column-gap: 5px;
-}
-
-.experience--details {
-    display: flex;
-    flex-direction: column;  
-}
-
-.experience--details span {
-    margin: 0;
-} */
