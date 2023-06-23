@@ -11,15 +11,19 @@ export default function App() {
     
     let cardElements = DATA.map(
         (cardObj)=>{
-            return (<Card 
-                image={cardObj.image}
-                stars={cardObj.stars} 
-                reviewCount={cardObj.reviewCount}
-                country={cardObj.country} 
-                experience={cardObj.experience}
-                price={cardObj.price}
-                openSpots={cardObj.openSpots}
-            />);
+            return (
+            // <Card 
+            //     key={cardObj.id}
+            //     image={cardObj.image}
+            //     stars={cardObj.stars} 
+            //     reviewCount={cardObj.reviewCount}
+            //     country={cardObj.country} 
+            //     experience={cardObj.experience}
+            //     price={cardObj.price}
+            //     openSpots={cardObj.openSpots}
+            // />)
+            <Card {...cardObj} />
+            );
         }
     )
     
