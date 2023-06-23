@@ -1,3 +1,6 @@
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
+
 * {
     box-sizing: border-box;
 }
@@ -7,6 +10,10 @@ body {
     font-family: Arial;
 }
 
+svg {
+    margin: 0;
+    padding: 0;
+}
 nav {
     height: 70px;
 }
@@ -68,28 +75,66 @@ section {
 /* Card */
 
 .card {
-    width: 175px;
-    font-size: 12px;
+    width: 100%;
+    display: flex;
+    min-height: min-content;
 }
 
+.card--image-wrapper {
+    position: relative;
+}
+
+.card--badge {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    padding: 4px 10px;
+    border-radius: var(--size-2);
+}
+
+
 .card--image {
-    /* Don't hard code 175 here! */
-    width: 175px;
-    height: 175px;
+    inline-size: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
     border-radius: 6px;
     object-fit: cover;
+    margin-bottom: 8px;
 }
 
 .card--stats {
     display: flex;
     align-items: center;
+    column-gap: 3px;
 }
 
 .card--star {
     height: 12px;
+    width: 12px;
 }
+
+.card--experience-text {
+    font-size: 14px;
+}
+
+.card--experience-price {
+    font-size: 12px;
+}
+
 
 .gray {
     color: rgb(140, 140, 140);
 }
 
+.media-scroller {
+
+    --_spacer: var(--size-1);
+
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 22.5%; /* see md file for why we don't use factors of 100 */
+    gap: var(--_spacer);  /* openprop offers this for convinience */
+
+    overflow-x: auto; 
+    overscroll-behavior-inline: contain; /* comment and uncomment */
+}

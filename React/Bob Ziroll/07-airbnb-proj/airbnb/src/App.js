@@ -18,6 +18,7 @@ export default function App() {
                 country={cardObj.country} 
                 experience={cardObj.experience}
                 price={cardObj.price}
+                openSpots={cardObj.openSpots}
             />);
         }
     )
@@ -27,7 +28,10 @@ export default function App() {
         <div>
             <Navbar />
             <Hero />
-            {cardElements}
+            <section className="media-scroller snaps-inline mb-4">
+                {cardElements}
+            </section>
+            
         </div>
     )
 }
