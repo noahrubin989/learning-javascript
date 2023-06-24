@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+
+/* Every section apart from the first */
+section:not(:first-child) {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.brand-icon {
+  padding-left: 10px;
+}
+
+/* === Form === */
+.meme-generation-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+}
+
+.my-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  column-gap: 30px;
+  border-radius: 5px;
+  background-color: white;
+  padding-top: 20px;
+}
+
+.my-form > input {
+  width: 50%;
+  border: .02em #C9C9C9 solid;
+  border-radius: 8px;
+  padding: 8px 16px;
+}
