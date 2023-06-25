@@ -1,5 +1,4 @@
-// import React, { useState } from "react";
-import React from "react";
+import React, { useState } from 'react';
 import memesData from "../data/memesData";
 
 const MemeInput = (props) => {
@@ -10,6 +9,17 @@ const MemeInput = (props) => {
         console.log(memesArray[randomNumber].url);
     }
 
+    const [thingsArray, setThingsArray] = useState(['Thing 1', 'Thing 2']);
+
+    function addThing() {
+        setThingsArray(prevArray => [...prevArray, `Thing ${prevArray.length + 1}`]);
+    }
+    const pElements = thingsArray.map(
+        (item, index)=>{
+            return <p key={index}>{item}</p>;
+        }
+    )
+
     return (
         <section className="meme-generation-container">
             <form className="my-form">
@@ -18,6 +28,12 @@ const MemeInput = (props) => {
             </form>
             <div className="d-grid">
                 <button onClick={handleClick} className="btn btn-dark" type="button">Get a new meme image</button>
+            </div>
+            <div>
+                <button onClick={addThing} className="btn btn-dark" type="button">
+                    Add item
+                </button>
+                {pElements}
             </div>
         </section>
     );
