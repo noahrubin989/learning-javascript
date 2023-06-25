@@ -1,0 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
+.card-title-container {
+  column-gap: 6px;
+}
