@@ -3,7 +3,7 @@ import memesData from "../data/memesData";
 
 const MemeInput = (props) => {
 
-    let [url, setUrl] = useState('');
+    let [url, setUrl] = useState('https://i.imgflip.com/26am.jpg');
 
     function getImg() {
         setUrl(()=>{
