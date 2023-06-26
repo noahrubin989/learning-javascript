@@ -5,3 +5,12 @@
 .card-title-container {
   column-gap: 6px;
 }
+
+.brand-icon {
+  color: grey;
+}
+
+.favourite {
+  /* Styling for the favorite (isFavourite=true) state */
+  color: rgb(0, 0, 255);
+}
