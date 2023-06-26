@@ -3,16 +3,28 @@ import memesData from "../data/memesData";
 
 const MemeInput = (props) => {
 
-    let [url, setUrl] = useState('https://i.imgflip.com/26am.jpg');
+    const [meme, setMeme] = useState(
+        {
+            topText: "",
+            bottomText: "",
+            randomImage: "https://i.imgflip.com/1bij.jpg"
+        }
+    );
 
-    function getImg() {
-        setUrl(()=>{
-            const memesArray = memesData.data.memes;
-            const randomNum = Math.floor(Math.random()*memesArray.length);
-            return memesArray[randomNum].url;
-        })
+    const getMemeImage = () => {
+        const memesArray = memesData.data.memes;  // get the array with all of our meme info
+        const randomNumber = Math.floor(Math.random() * memesArray.length);  // random index
+        const url = memesArray[randomNumber].url;  // resulting url of arr[rand].url
+        setMeme(
+            (prevObj)=>{
+                return {
+                    ...prevObj,
+                    randomImage: url
+                }
+            }
+        )
     }
-    
+
 
     return (
         <section className="meme-generation-container">
@@ -21,9 +33,9 @@ const MemeInput = (props) => {
                 <input type="text" className="bottom-text" placeholder="bottom-text"/>
             </form>
             <div className="d-grid">
-                <button onClick={getImg} className="btn btn-dark" type="button">Get a new meme image</button>
+                <button onClick={getMemeImage} className="btn btn-dark" type="button">Get a new meme image</button>
             </div>
-            <img className="meme-image" src={url} alt="meme"/>
+            <img className="meme-image" src={meme.randomImage} alt="meme"/>
         </section>
     );
 }
