@@ -107,6 +107,9 @@ export default function PricingPage() {
           </Card>
         </Grid>
       </Grid>
+      {/* <Typography variant="h4" align="center">
+        Start Growing Today
+      </Typography> */}
     </Box>
   );
 }

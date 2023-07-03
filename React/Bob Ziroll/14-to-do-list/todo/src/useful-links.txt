@@ -1,0 +1,2 @@
+Slide transitions
+https://swiperjs.com/demos#effect-fade
