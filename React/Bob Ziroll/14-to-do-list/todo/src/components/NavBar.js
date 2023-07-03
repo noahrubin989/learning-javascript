@@ -18,7 +18,6 @@ export default function NavBar() {
                         <Button component={Link} to="/pricing" color='inherit'>Pricing</Button>
                     </Stack>
                 </Toolbar>
-
             </AppBar>
         </section>
     );
