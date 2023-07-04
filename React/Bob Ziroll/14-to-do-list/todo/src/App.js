@@ -5,6 +5,8 @@ import FeaturesPage from "./components/FeaturesPage";
 import PricingPage from "./components/PricingPage";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
+import FAQ from "./components/FAQ";
+import Contact from "./components/Contact";
 import { Box } from "@mui/material";
 
 export default function App() {
@@ -14,12 +16,15 @@ export default function App() {
       <Router>
         {/* NavBar to be displayed on every page */}
         <NavBar />
+        {/* This is part 2 of ensuring that the footer stays exactly where I want it */}
         <Box sx={{ flex: 1 }}>
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/features" element={<FeaturesPage />} />
             <Route path="/pricing" element={<PricingPage />} />
+            <Route path="/faq" element={<FAQ />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </Box>
         {/* Footer to be displayed at the bottom */}

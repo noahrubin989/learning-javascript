@@ -1,5 +1,12 @@
 import React from "react";
-import { Box, Container, Typography, Grid, Button } from "@mui/material";
+import {
+  Box,
+  Container,
+  Typography,
+  TextField,
+  Grid,
+  Button,
+} from "@mui/material";
 
 const Footer = () => {
   const smallerFontSize = "12px";
@@ -24,7 +31,14 @@ const Footer = () => {
         </Typography>
         <Grid container paddingX="20%">
           <Grid item xs={9}>
-            <input
+            <TextField
+              placeholder="john.smith@example.com"
+              type="email"
+              required={true}
+              fullWidth={true}
+            />
+            {/* Style using the styles below if you can */}
+            {/* <input
               type="email"
               placeholder="john.smith@example.com"
               style={{
@@ -35,7 +49,7 @@ const Footer = () => {
                 outline: "none",
                 height: "100%",
               }}
-            />
+            /> */}
           </Grid>
           <Grid item xs={3} sx={{ backgroundColor: "black" }}>
             <Button

@@ -58,13 +58,13 @@ const cardData = [
     icon: <PaletteIcon sx={{ fontSize: 150 }} />,
     title: "Customisable Themes",
     description:
-      "TaskMaster offers a range of customizable themes, allowing users to personalize the app's appearance according to their preferences.",
+      "TaskMaster offers a range of customisable themes, allowing users to personalize the app's appearance according to their preferences.",
   },
   {
     icon: <ArrowUpwardIcon sx={{ fontSize: 150 }} />,
-    title: "Streamlined Task Organization",
+    title: "Streamlined Task organisation",
     description:
-      "TaskMaster provides efficient task organization features, such as tags, and folders, to help users categorize and prioritize effectively",
+      "TaskMaster provides efficient task organisation features, such as tags, and folders, to help users categorize and prioritize effectively",
   },
   {
     icon: <CheckIcon sx={{ fontSize: 150 }} />,
@@ -76,7 +76,7 @@ const cardData = [
     icon: <AutoAwesomeMosaicIcon sx={{ fontSize: 150 }} />,
     title: "Responsive Layout",
     description:
-      "TaskMaster utilizes a responsive layout that adapts to different screen sizes and orientations, ensuring optimal usability on various devices.",
+      "TaskMaster utilises a responsive layout that adapts to different screen sizes and orientations, ensuring optimal usability on various devices.",
   },
   // Add more card objects as needed
 ];
@@ -224,7 +224,7 @@ export default function FeaturesPage() {
               </Typography>
               <Typography>
                 TaskMaster provides advanced collaboration features with
-                customizable permissions and access control. Admins can define
+                customisable permissions and access control. Admins can define
                 user roles, assign specific permissions to each role, and
                 control access to sensitive information or features, ensuring
                 secure and efficient collaboration within teams.
