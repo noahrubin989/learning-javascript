@@ -37,7 +37,7 @@ const faqData = [
   {
     question: "What task organisation features does TaskMaster provide?",
     answer:
-      "TaskMaster provides efficient task organisation features, such as tags and folders, to help users categorize and prioritize effectively.",
+      "TaskMaster provides efficient task organisation features, such as tags and folders, to help users categorize and prioritise effectively.",
   },
   {
     question: "Does TaskMaster adapt to different devices?",

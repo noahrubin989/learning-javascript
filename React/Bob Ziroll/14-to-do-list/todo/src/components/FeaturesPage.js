@@ -64,7 +64,7 @@ const cardData = [
     icon: <ArrowUpwardIcon sx={{ fontSize: 150 }} />,
     title: "Streamlined Task organisation",
     description:
-      "TaskMaster provides efficient task organisation features, such as tags, and folders, to help users categorize and prioritize effectively",
+      "TaskMaster provides efficient task organisation features, such as tags, and folders, to help users categorize and prioritise effectively",
   },
   {
     icon: <CheckIcon sx={{ fontSize: 150 }} />,

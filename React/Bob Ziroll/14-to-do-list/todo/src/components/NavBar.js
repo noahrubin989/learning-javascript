@@ -38,6 +38,9 @@ export default function NavBar() {
             </Link>
           </Box>
           <Stack direction="row" spacing={2}>
+            <Button component={Link} to="/" color="inherit">
+              Home
+            </Button>
             <Button component={Link} to="/about" color="inherit">
               About
             </Button>

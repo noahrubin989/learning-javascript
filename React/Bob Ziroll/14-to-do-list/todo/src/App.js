@@ -9,6 +9,11 @@ import FAQ from "./components/FAQ";
 import Contact from "./components/Contact";
 import { Box } from "@mui/material";
 
+// import the data
+import stats from "./assets/data/stats";
+import reviews from "./assets/data/reviews";
+import imageObjectsArray from "./assets/data/image-objects";
+
 export default function App() {
   return (
     // Ensures that footer stays at the bottom and expands to fill the available space
@@ -19,8 +24,16 @@ export default function App() {
         {/* This is part 2 of ensuring that the footer stays exactly where I want it */}
         <Box sx={{ flex: 1 }}>
           <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/about" element={<AboutPage />} />
+            <Route
+              path="/"
+              element={
+                <HomePage
+                  reviews={reviews}
+                  imageObjectsArray={imageObjectsArray}
+                />
+              }
+            />
+            <Route path="/about" element={<AboutPage stats={stats} />} />
             <Route path="/features" element={<FeaturesPage />} />
             <Route path="/pricing" element={<PricingPage />} />
             <Route path="/faq" element={<FAQ />} />

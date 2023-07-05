@@ -31,7 +31,7 @@ export default function PricingPage() {
                 gutterBottom
                 sx={{ height: { sm: "auto", md: "120px" } }}
               >
-                With TaskMaster Essentials, you can stay organized with features
+                With TaskMaster Essentials, you can stay organised with features
                 like task categorisation, due date reminders, and task progress
                 tracking.
               </Typography>
