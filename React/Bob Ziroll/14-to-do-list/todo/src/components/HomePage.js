@@ -29,7 +29,7 @@ export default function HomePage(props) {
   const themeCOLOR = "#00A36C";
 
   return (
-    <Box>
+    <Box className="homepage-container">
       <Box sx={{ position: "relative" }}>
         <Box>
           <ImageList cols={3} gap={0}>
@@ -49,7 +49,7 @@ export default function HomePage(props) {
         <Box
           sx={{
             position: "absolute",
-            top: "30px",
+            top: "10%",
             paddingX: "15%",
             display: { xs: "none", md: "grid" },
             placeItems: "center",

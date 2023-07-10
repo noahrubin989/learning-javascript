@@ -12,6 +12,8 @@ const Footer = () => {
   const smallerFontSize = "12px";
   const typographyStyle = { fontSize: smallerFontSize };
 
+  const subscribeText = "Subscribe";
+
   return (
     <Box
       component="footer"
@@ -37,19 +39,6 @@ const Footer = () => {
               required={true}
               fullWidth={true}
             />
-            {/* Style using the styles below if you can */}
-            {/* <input
-              type="email"
-              placeholder="john.smith@example.com"
-              style={{
-                width: "100%",
-                borderRadius: 0,
-                padding: "2%",
-                border: "none",
-                outline: "none",
-                height: "100%",
-              }}
-            /> */}
           </Grid>
           <Grid item xs={3} sx={{ backgroundColor: "black" }}>
             <Button
@@ -65,7 +54,7 @@ const Footer = () => {
                 },
               }}
             >
-              SUBSCRIBE
+              {subscribeText}
             </Button>
           </Grid>
         </Grid>
