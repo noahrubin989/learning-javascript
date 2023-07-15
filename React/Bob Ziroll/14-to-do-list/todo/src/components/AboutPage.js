@@ -11,7 +11,7 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 export default function AboutPage(props) {
   return (
-    <Box sx={{ paddingX: "10%", paddingY: "5%", display: "grid", gap: "20px" }}>
+    <Box sx={{ paddingX: "10%", paddingY: "2%", display: "grid", gap: "20px" }}>
       <Typography variant="h3" fontWeight="bold" gutterBottom>
         Our mission is to BOLSTER your productivity so that you can spend more
         time doing the things you LOVE

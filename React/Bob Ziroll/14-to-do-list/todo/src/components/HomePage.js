@@ -29,7 +29,7 @@ export default function HomePage(props) {
   const themeCOLOR = "#00A36C";
 
   return (
-    <Box className="homepage-container">
+    <React.Fragment>
       <Box sx={{ position: "relative" }}>
         <Box>
           <ImageList cols={3} gap={0}>
@@ -119,6 +119,6 @@ export default function HomePage(props) {
           })}
         </Swiper>
       </Box>
-    </Box>
+    </React.Fragment>
   );
 }
