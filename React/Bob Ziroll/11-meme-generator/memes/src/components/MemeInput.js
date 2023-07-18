@@ -20,18 +20,43 @@ const MemeInput = (props) => {
     });
   };
 
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setMeme((prevObj) => {
+      return { ...prevObj, [name]: value };
+    });
+  };
+
   return (
     <section className="meme-generation-container">
       <form className="my-form">
-        <input type="text" className="top-text" placeholder="top-text" />
-        <input type="text" className="bottom-text" placeholder="bottom-text" />
+        <input
+          type="text"
+          className="top-text"
+          placeholder="top-text"
+          name="topText"
+          value={meme.topText}
+          onChange={(e) => handleChange(e)}
+        />
+        <input
+          type="text"
+          className="bottom-text"
+          placeholder="bottom-text"
+          name="bottomText"
+          value={meme.bottomText}
+          onChange={(e) => handleChange(e)}
+        />
       </form>
       <div className="d-grid">
         <button onClick={getMemeImage} className="btn btn-dark" type="button">
           Get a new meme image
         </button>
       </div>
-      <img className="meme-image" src={meme.randomImage} alt="meme" />
+      <div className="d-flex justify-content-center position-relative">
+        <h3 className="image-top-text">{meme.topText}</h3>
+        <img className="meme-image" src={meme.randomImage} alt="meme" />
+        <h3 className="image-bottom-text">{meme.bottomText}</h3>
+      </div>
     </section>
   );
 };

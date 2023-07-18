@@ -2,7 +2,6 @@
   box-sizing: border-box;
 }
 
-
 /* Every section apart from the first */
 section:not(:first-child) {
   padding-left: 20px;
@@ -32,7 +31,7 @@ section:not(:first-child) {
 
 .my-form > input {
   width: 50%;
-  border: .02em #C9C9C9 solid;
+  border: 0.02em #c9c9c9 solid;
   border-radius: 8px;
   padding: 8px 16px;
 }
@@ -43,4 +42,18 @@ section:not(:first-child) {
   margin-left: auto;
   margin-right: auto;
   width: 50%; */
+}
+
+.image-top-text {
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  top: 10%;
+}
+
+.image-bottom-text {
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  bottom: 10%;
 }
